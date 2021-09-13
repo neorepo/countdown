@@ -97,7 +97,7 @@
                 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
                 // Muestre el resultado en el elemento con id="demo"
-                d.getElementById("wrapper").innerHTML = `<p>Trabajo para<br><span>${minutes + 1}</span><br>${(minutes > 0) ? "minutos" : "minuto"}</p>`;
+                d.getElementById("wrapper").innerHTML = `<p>Tiempo estimado<br><span>${minutes + 1}</span><br>${(minutes > 0) ? "minutos" : "minuto"}</p>`;
                 // console.log(minutes + ":" + seconds);
                 // Si la cuenta regresiva ha terminado, escribe un texto.
                 if (distance <= 0) {
